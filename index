@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escuchá a mi nietita 💖</title>
+  <style>
+    body {
+      background: #ffeef4;
+      text-align: center;
+      font-family: "Segoe UI", sans-serif;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 6vw;
+      margin-bottom: 10px;
+      color: #880e4f;
+    }
+    p {
+      font-size: 4vw;
+      color: #ad1457;
+      margin-bottom: 30px;
+    }
+    .logo {
+      width: 50vw;
+      max-width: 250px;
+      margin-top: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px #d81b60;
+    }
+    audio {
+      width: 80%;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎀 Escuchá a mi nietita</h1>
+  <p>Con solo darle play 🌸</p>
+
+  <audio controls autoplay>
+    <source src="nietita.aac" type="audio/aac">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <div>
+    <img class="logo" src="nietita.jpg" alt="Logo del proyecto">
+  </div>
+
+  <script>
+    // En caso de que autoplay no funcione, inicia al primer toque
+    document.addEventListener('click', () => {
+      const player = document.querySelector('audio');
+      player.play();
+    }, { once: true });
+  </script>
+</body>
+</html>
 
