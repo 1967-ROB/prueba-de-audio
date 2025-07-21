@@ -1,59 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Escuchá a mi nietita 💖</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🎀 Escuchá a mi nietita</title>
   <style>
     body {
-      background: #ffeef4;
+      background: #fff8f8;
+      font-family: sans-serif;
       text-align: center;
-      font-family: "Segoe UI", sans-serif;
       padding: 40px;
     }
     h1 {
-      font-size: 6vw;
-      margin-bottom: 10px;
-      color: #880e4f;
+      color: #c2185b;
+      font-size: 2em;
     }
     p {
-      font-size: 4vw;
+      font-size: 1.2em;
       color: #ad1457;
-      margin-bottom: 30px;
-    }
-    .logo {
-      width: 50vw;
-      max-width: 250px;
-      margin-top: 40px;
-      border-radius: 20px;
-      box-shadow: 0 0 10px #d81b60;
     }
     audio {
-      width: 80%;
-      max-width: 400px;
+      margin-top: 20px;
+    }
+    .logo {
+      margin-top: 30px;
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
-  <h1>🎀 Escuchá a mi nietita</h1>
-  <p>Con solo darle play 🌸</p>
-
+  <h1>Escuchá a mi nietita 💖</h1>
+  <p>Escaneá el código o presioná play</p>
   <audio controls autoplay>
-    <source src="nietita.aac" type="audio/aac">
+    <source src="nietita.aac" type="audio/aac" />
     Tu navegador no soporta audio.
   </audio>
-
-  <div>
-    <img class="logo" src="nietita.jpg" alt="Logo del proyecto">
-  </div>
-
-  <script>
-    // En caso de que autoplay no funcione, inicia al primer toque
-    document.addEventListener('click', () => {
-      const player = document.querySelector('audio');
-      player.play();
-    }, { once: true });
-  </script>
+  <br />
+  <img src="nietita.jpg" alt="Foto" class="logo" />
 </body>
 </html>
 
