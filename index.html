@@ -11,13 +11,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       padding: 20px;
       text-align: center;
     }
     h1 {
       color: #00695c;
-      margin-bottom: 10px;
+      margin-top: 10px;
     }
     p {
       font-size: 18px;
@@ -26,21 +26,27 @@
     .audio-box {
       margin: 20px 0;
     }
+    .foto-nieta {
+      max-width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      margin-bottom: 15px;
+    }
     .logo {
       max-width: 180px;
-      margin-bottom: 15px;
+      margin-top: 30px;
     }
     .dedicatoria {
       font-style: italic;
-      margin-top: 15px;
+      margin-top: 10px;
       color: #444;
     }
   </style>
 </head>
 <body>
 
-  <!-- 🖼️ Logo de Pucón Personalizados -->
-  <img src="fa27020f-3424-49e5-afe5-9eef511faf93.png" alt="Pucón Personalizados" class="logo" />
+  <!-- 📸 Foto de la nietita -->
+  <img src="nietita.jpg" alt="Nietita" class="foto-nieta" />
 
   <!-- 📝 Título y texto -->
   <h1>Un recuerdo que suena al corazón</h1>
@@ -49,13 +55,16 @@
   <!-- 🎵 Reproductor de audio -->
   <div class="audio-box">
     <audio controls>
-      <source src="audio.mp3" type="audio/mpeg">
+      <source src="nietita.aac" type="audio/mpeg">
       Tu navegador no soporta audio HTML5.
     </audio>
   </div>
 
   <!-- 💬 Dedicatoria opcional -->
-  <p class="dedicatoria">"Siempre estarás en nuestros corazones..."</p>
+  <p class="dedicatoria">"Aunque no te puedo ver ni abrazar..."</p>
+
+  <!-- 🖼️ Logo al final -->
+  <img src="fa27020f-3424-49e5-afe5-9eef511faf93.png" alt="Logo Pucón" class="logo" />
 
 </body>
 </html>
